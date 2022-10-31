@@ -5,7 +5,7 @@ from django.db import models
 
 class Order(models.Model):
     number = models.IntegerField()
-    type = models.CharField()
+    type = models.CharField(max_length=12)
     weight = models.IntegerField()
     shipment_date = models.DateField()
     shipping_date = models.DateField()
